@@ -3,7 +3,9 @@
 # 🟪 Basalt
 ### Modern tunnels. A home for older Windows.
 
-**Xray + sing-box · TUN · subscription-first · x64 & x86**
+**Two modern cores · .NET Framework 4.0 · older Windows · x64 & x86**
+
+Basalt is a modern desktop VPN client powered by **Xray and sing-box**, built with backward compatibility in mind. It brings current protocols, system-wide tunneling and straightforward connection management to users who still rely on older Windows systems.
 
 [![Release](https://img.shields.io/github/v/release/HilistonGit/Basalt?color=826ff4&style=for-the-badge)](https://github.com/HilistonGit/Basalt/releases/latest)
 [![License](https://img.shields.io/badge/license-GPL--3.0-5dd6b5?style=for-the-badge)](LICENSE)
@@ -17,9 +19,16 @@
 
 </div>
 
-## ✨ Your subscriptions, front and center
+## 🪨 Modern VPN capabilities for Windows you still use
 
-Paste a provider URL with **Ctrl+V**. Browse servers inside their subscription, see quota and expiry when supplied, refresh the group, and test HTTPS availability. Country indicators, search, favorites, latency sorting and a validated JSON outbound editor keep the useful tools close.
+Basalt primarily targets **Windows 8 and 8.1**. Its purpose is to let you use modern VPN protocols without replacing your operating system just to run a client. One interface brings together **Xray and sing-box**, choosing the appropriate core for each profile. Tunnel the whole computer or split traffic using routing rules.
+
+Backward compatibility shapes both layers:
+
+- **A lightweight .NET Framework 4.0 / Windows Forms shell.** No Electron, WebView or embedded browser. This platform keeps even Windows XP within the shell's compatibility ambitions, although Basalt's shell itself has not yet been tested on XP.
+- **Modern cores in dedicated legacy builds.** The package includes Xray 26.10.21 and sing-box 1.14.4, built upstream for Windows 7 and newer. These are current-generation cores compiled for an older environment, rather than versions frozen years ago. Basalt distributes official legacy releases and verifies their checksums.
+
+> **The shell and VPN cores have different requirements.** Targeting .NET 4.0 does not make the complete package XP-compatible: the bundled cores and TUN do not run on XP. Windows 8/8.1 remain the priority; dedicated testing on those systems is still pending.
 
 ## ⚡ Two cores. One desktop client.
 
@@ -28,6 +37,10 @@ Paste a provider URL with **Ctrl+V**. Browse servers inside their subscription, 
 - **Split routing** from Happ, native Xray / sing-box JSON and supported Clash YAML rules. Native routing documents take priority over abbreviated Happ headers.
 - **GeoSite / GeoIP and remote rule sets**, downloaded and checked before applying a subscription.
 - **Portable packages** for x64 and x86, with pinned official legacy cores and Wintun. No Electron, browser runtime or Node.js.
+
+## ✨ Your subscriptions, front and center
+
+Paste a provider URL with **Ctrl+V**. Browse servers inside their subscription, see quota and expiry when supplied, refresh the group, and test HTTPS availability. Country indicators, search, favorites, latency sorting and a validated JSON outbound editor keep the useful tools close.
 
 ## 🌍 Make it yours
 
