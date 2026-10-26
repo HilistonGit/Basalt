@@ -1,0 +1,6 @@
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup><OutputType>WinExe</OutputType><ApplicationIcon>..\..\assets\Basalt.ico</ApplicationIcon><TargetFrameworkVersion>v4.0</TargetFrameworkVersion><PlatformTarget>x86</PlatformTarget><AssemblyName>Basalt</AssemblyName><OutputPath>..\..\build\</OutputPath><Configuration Condition="'$(Configuration)' == ''">Release</Configuration></PropertyGroup>
+  <ItemGroup><Reference Include="System"/><Reference Include="System.Xml"/><Reference Include="System.Core"/><Reference Include="System.Drawing"/><Reference Include="System.Windows.Forms"/><Reference Include="System.Security"/><Reference Include="System.Web.Extensions"/><Compile Include="*.cs"/><None Include="App.config"/><ProjectReference Include="..\Basalt.Core\Basalt.Core.csproj"><Name>Basalt.Core</Name></ProjectReference></ItemGroup>
+  <ItemGroup><EmbeddedResource Include="..\..\assets\Basalt.ico"><LogicalName>Basalt.Icon</LogicalName></EmbeddedResource></ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
+</Project>

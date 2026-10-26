@@ -1,0 +1,6 @@
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup><OutputType>Library</OutputType><TargetFrameworkVersion>v4.0</TargetFrameworkVersion><AssemblyName>Basalt.Core</AssemblyName><OutputPath>..\..\build\</OutputPath><Configuration Condition="'$(Configuration)' == ''">Release</Configuration></PropertyGroup>
+  <ItemGroup><Reference Include="YamlDotNet"><HintPath>..\..\vendor\YamlDotNet\YamlDotNet.dll</HintPath><Private>True</Private></Reference><Reference Include="System"/><Reference Include="System.Core"/><Reference Include="System.Web.Extensions"/><Compile Include="*.cs"/></ItemGroup>
+  <ItemGroup><EmbeddedResource Include="Locales\en.json"><LogicalName>Basalt.en.json</LogicalName></EmbeddedResource></ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
+</Project>

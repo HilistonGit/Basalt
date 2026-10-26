@@ -1,0 +1,15 @@
+name: Windows build
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch .NET 4 reference assemblies
+        shell: pwsh
+        run: ./scripts/fetch-framework-references.ps1
+      - name: Compile and run model and UI tests
+        shell: pwsh
+        run: ./scripts/build.ps1

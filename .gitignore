@@ -1,0 +1,14 @@
+/build/
+/dist/
+/cores/
+*.user
+*.suo
+*.partial
+*.log
+settings.dat
+.env
+.env.*
+*.pfx
+*.key
+/vendor/YamlDotNet/package/
+/vendor/YamlDotNet/package.zip

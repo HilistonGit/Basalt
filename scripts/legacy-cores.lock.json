@@ -1,0 +1,34 @@
+[
+  {
+    "url": "https://github.com/XTLS/Xray-core/releases/download/v26.10.21/Xray-win7-32.zip",
+    "sha256": "524172ea8f2805dc1af29c076a6b2da5913f5f981f7f40a8f53c189311991ad6",
+    "archive": "Xray-win7-32.zip",
+    "architecture": "386",
+    "core": "xray",
+    "version": "v26.10.21"
+  },
+  {
+    "url": "https://github.com/XTLS/Xray-core/releases/download/v26.10.21/Xray-win7-64.zip",
+    "sha256": "c4e05286c3ec3e6d294ec928aaa52e918776d759af5c8fb3d6ee725670c79e39",
+    "archive": "Xray-win7-64.zip",
+    "architecture": "amd64",
+    "core": "xray",
+    "version": "v26.10.21"
+  },
+  {
+    "url": "https://github.com/SagerNet/sing-box/releases/download/v1.14.4/sing-box-1.14.4-windows-386-legacy-windows-7.zip",
+    "sha256": "90401eb22f795803db44b72ec5a3ba3a2014d411ced3c5d75c7992e94e90a16e",
+    "archive": "sing-box-1.14.4-windows-386-legacy-windows-7.zip",
+    "architecture": "386",
+    "core": "sing-box",
+    "version": "v1.14.4"
+  },
+  {
+    "url": "https://github.com/SagerNet/sing-box/releases/download/v1.14.4/sing-box-1.14.4-windows-amd64-legacy-windows-7.zip",
+    "sha256": "d7d4dc70328eb60b5dd90125bab31b0913c0370ee730e55acd5034a7e1bd19af",
+    "archive": "sing-box-1.14.4-windows-amd64-legacy-windows-7.zip",
+    "architecture": "amd64",
+    "core": "sing-box",
+    "version": "v1.14.4"
+  }
+]
