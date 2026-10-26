@@ -1,6 +1,8 @@
 <div align="center">
 
-# 🟪 Basalt
+<img src="assets/Basalt.png" width="96" height="96" alt="Basalt application icon">
+
+# Basalt
 ### Modern tunnels. A home for older Windows.
 
 **Two modern cores · .NET Framework 4.0 · older Windows · x64 & x86**
@@ -26,7 +28,7 @@ Basalt primarily targets **Windows 8 and 8.1**. Its purpose is to let you use mo
 Backward compatibility shapes both layers:
 
 - **A lightweight .NET Framework 4.0 / Windows Forms shell.** No Electron, WebView or embedded browser. This platform keeps even Windows XP within the shell's compatibility ambitions, although Basalt's shell itself has not yet been tested on XP.
-- **Modern cores in dedicated legacy builds.** The package includes Xray 26.10.21 and sing-box 1.14.4, built upstream for Windows 7 and newer. These are current-generation cores compiled for an older environment, rather than versions frozen years ago. Basalt distributes official legacy releases and verifies their checksums.
+- **Modern cores in dedicated legacy builds.** The package includes Xray 26.10.21 and sing-box 1.14.4, built upstream for Windows 7 and newer. **Legacy refers to the target operating system:** modern core versions compiled to run on older Windows. Basalt distributes official legacy releases and verifies their checksums.
 
 > **The shell and VPN cores have different requirements.** Targeting .NET 4.0 does not make the complete package XP-compatible: the bundled cores and TUN do not run on XP. Windows 8/8.1 remain the priority; dedicated testing on those systems is still pending.
 
