@@ -63,7 +63,7 @@ namespace Basalt.Core
         public string LastUpdateError { get; set; }
         public int UpdateHours { get; set; }
         public string SupportUrl { get; set; }
-        public Subscription() { Id = Guid.NewGuid().ToString("N"); UserAgent = "Basalt/0.6.7"; HwidMode = "auto"; AutoUpdate = true; }
+        public Subscription() { Id = Guid.NewGuid().ToString("N"); UserAgent = "Basalt/0.6.8"; HwidMode = "auto"; AutoUpdate = true; }
         public override string ToString() { return Name; }
     }
     public sealed class Settings

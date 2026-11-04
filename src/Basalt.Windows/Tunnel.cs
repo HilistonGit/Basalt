@@ -38,7 +38,7 @@ namespace Basalt.Windows
             if (!File.Exists(manifestPath)) throw new IOException(L10n.T("В сборке отсутствует пакет ядер. Установите полный пакет Basalt с legacy-ядрами."));
             var manifest = Json.Read(File.ReadAllText(manifestPath)); var hashes = (Dictionary<string, object>)manifest["files"];
             if (!manifest.ContainsKey("xrayVersion") || !manifest.ContainsKey("singBoxVersion") || (string)manifest["xrayVersion"] != "26.10.21" || (string)manifest["singBoxVersion"] != "1.14.4")
-                throw new IOException(L10n.T("Для Basalt 0.6.7 нужен полный пакет с Xray 26.10.21 и sing-box 1.14.4. Обновите каталог cores вместе с приложением."));
+                throw new IOException(L10n.T("Для Basalt 0.6.8 нужен полный пакет с Xray 26.10.21 и sing-box 1.14.4. Обновите каталог cores вместе с приложением."));
             foreach (string name in new[] { "xray.exe", "sing-box.exe", "wintun.dll", "geoip.dat", "geosite.dat" })
             {
                 string path = Path.Combine(DirectoryPath, name); if (!File.Exists(path)) throw new IOException(L10n.T("В пакете отсутствует ") + name);

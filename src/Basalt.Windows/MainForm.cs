@@ -44,7 +44,7 @@ namespace Basalt.Windows
             };
             var bottom = new BufferedPanel { Dock = DockStyle.Bottom, Height = 118, BackColor = Design.Surface };
             sidebarStatus.SetBounds(26, 16, 165, 28); sidebarStatus.Font = Design.Font(9, false); bottom.Controls.Add(sidebarStatus);
-            Place(bottom, Caption("Basalt 0.6.7  /  Desktop", 9, Design.Muted), 26, 58, 160, 24);
+            Place(bottom, Caption("Basalt 0.6.8  /  Desktop", 9, Design.Muted), 26, 58, 160, 24);
             navigation.Dock = DockStyle.Fill; navigation.AutoScroll = true; sidebar.Controls.Add(navigation); sidebar.Controls.Add(bottom); sidebar.Controls.Add(brand);
             var footer = new BufferedPanel { Dock = DockStyle.Bottom, Height = 40, Padding = new Padding(24, 8, 20, 0), BackColor = Design.Surface };
             notice.Dock = DockStyle.Fill; notice.Font = Design.Font(9, false); notice.ForeColor = Design.Muted; footer.Controls.Add(notice); activity.Dock = DockStyle.Top; activity.Height = 4; footer.Controls.Add(activity);

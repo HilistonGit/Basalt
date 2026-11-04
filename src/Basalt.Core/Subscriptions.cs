@@ -123,7 +123,7 @@ namespace Basalt.Core
             {
                 var request = (HttpWebRequest)WebRequest.Create(url);
                 request.AllowAutoRedirect = false; request.Timeout = 20000; request.ReadWriteTimeout = 20000;
-                request.UserAgent = String.IsNullOrWhiteSpace(subscription.UserAgent) ? "Basalt/0.6.7" : subscription.UserAgent; request.Proxy = null;
+                request.UserAgent = String.IsNullOrWhiteSpace(subscription.UserAgent) ? "Basalt/0.6.8" : subscription.UserAgent; request.Proxy = null;
                 request.Accept = "*/*"; foreach (var header in headers) request.Headers[header.Key] = header.Value;
                 using (var response = (HttpWebResponse)request.GetResponse())
                 {

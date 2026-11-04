@@ -61,7 +61,7 @@
   "Для доступа из LAN задайте имя пользователя и пароль.": "Set a username and password for LAN access.",
   "Для доступа из LAN задайте логин и пароль локального прокси.": "Set a local proxy username and password for LAN access.",
   "Для подписки нужен HTTPS URL без userinfo.": "Subscription requires an HTTPS URL without userinfo.",
-  "Для Basalt 0.6.7 нужен полный пакет с Xray 26.10.21 и sing-box 1.14.4. Обновите каталог cores вместе с приложением.": "Basalt requires the complete Xray 26.10.21 and sing-box 1.14.4 package. Update cores with the application.",
+  "Для Basalt 0.6.8 нужен полный пакет с Xray 26.10.21 и sing-box 1.14.4. Обновите каталог cores вместе с приложением.": "Basalt requires the complete Xray 26.10.21 and sing-box 1.14.4 package. Update cores with the application.",
   "Для TUN нужны права администратора.": "TUN requires administrator privileges.",
   "Для TUN требуется подготовленное сетевое окружение.": "TUN requires a prepared network environment.",
   "До ": "Until ",

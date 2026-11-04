@@ -10,8 +10,8 @@ namespace Basalt.Windows
     {
         static ComboBox UserAgents(string current)
         {
-            var field = Choice("Basalt/0.6.7", "Happ/1.0", "v2rayNG/1.9.0", "sing-box/1.13.0", "clash-verge/1.6.0");
-            field.DropDownStyle = ComboBoxStyle.DropDown; field.Text = current ?? "Basalt/0.6.7"; return field;
+            var field = Choice("Basalt/0.6.8", "Happ/1.0", "v2rayNG/1.9.0", "sing-box/1.13.0", "clash-verge/1.6.0");
+            field.DropDownStyle = ComboBoxStyle.DropDown; field.Text = current ?? "Basalt/0.6.8"; return field;
         }
         static ComboBox HwidChoice(string mode) { var box = Choice(L10n.T("Авто · для Happ"), L10n.T("Передавать"), L10n.T("Не передавать")); box.SelectedIndex = mode == "always" ? 1 : mode == "never" ? 2 : 0; return box; }
         static string HwidValue(ComboBox box) { return box.SelectedIndex == 1 ? "always" : box.SelectedIndex == 2 ? "never" : "auto"; }
@@ -55,7 +55,7 @@ namespace Basalt.Windows
             if (Uri.TryCreate(text, UriKind.Absolute, out url) && (url.Scheme == "https" || url.Scheme == "http"))
             {
                 if (url.Scheme != "https" || url.UserInfo != "") { Notify(L10n.T("Подписка должна использовать HTTPS без userinfo."), true); return; }
-                var subscription = new Subscription { Url = text, Name = title.Length == 0 ? url.Host : title, HwidMode = hwidMode, UserAgent = agent.Length == 0 ? "Basalt/0.6.7" : agent };
+                var subscription = new Subscription { Url = text, Name = title.Length == 0 ? url.Host : title, HwidMode = hwidMode, UserAgent = agent.Length == 0 ? "Basalt/0.6.8" : agent };
                 var existing = settings.Subscriptions.Find(delegate(Subscription item) { return item.Url == text; }); if (existing != null) { UpdateSubscription(existing); return; }
                 Work(delegate { return FetchValidated(subscription, settings.DeviceId); }, delegate(object value)
                 {

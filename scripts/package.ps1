@@ -12,6 +12,8 @@ foreach($arch in $architectures) { Copy-Item (Join-Path $root "$CoreDirectory\wi
 foreach($file in @('README.md','README.ru.md','NOTICE.md','LICENSE')) { Copy-Item (Join-Path $root $file) $dest -Force }
 foreach($file in @('compatibility.md','RELEASING.md','HISTORY.ru.md')){Copy-Item (Join-Path $root "docs/$file") (Join-Path $dest 'docs') -Force}
 Copy-Item (Join-Path $root 'docs/images/basalt-anonymized.png') (Join-Path $dest 'docs/images') -Force
+New-Item -ItemType Directory -Force (Join-Path $dest 'assets') | Out-Null
+Copy-Item (Join-Path $root 'assets/basalt-crystal.png') (Join-Path $dest 'assets') -Force
 foreach($file in @('tun-smoke-result.txt','proxy-smoke-result.txt','split-tun-result.txt')) { if(Test-Path (Join-Path $root "$BuildDirectory\$file")) { Copy-Item (Join-Path $root "$BuildDirectory\$file") (Join-Path $dest 'docs') -Force } }
 Copy-Item (Join-Path $root 'vendor\YamlDotNet\LICENSE.txt') (Join-Path $dest 'YamlDotNet-LICENSE.txt') -Force
 $archive=Join-Path $root ("dist\Basalt-$version-test$suffix.zip")
