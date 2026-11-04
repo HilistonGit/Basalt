@@ -38,9 +38,7 @@ namespace Basalt.Windows
             var brand = new BufferedPanel { Dock = DockStyle.Top, Height = 100 };
             brand.Paint += delegate(object sender, PaintEventArgs e)
             {
-                e.Graphics.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
-                using (var b = new SolidBrush(Design.Green)) e.Graphics.FillPolygon(b, new[] { new Point(28, 42), new Point(43, 33), new Point(58, 42), new Point(58, 61), new Point(43, 70), new Point(28, 61) });
-                using (var pen = new Pen(Color.White, 2)) { e.Graphics.DrawLine(pen, 38, 45, 38, 58); e.Graphics.DrawArc(pen, 35, 44, 14, 8, -90, 180); e.Graphics.DrawArc(pen, 35, 51, 14, 8, -90, 180); }
+                e.Graphics.DrawIcon(Icon, new Rectangle(25, 33, 38, 38));
                 using (var f = Design.Font(21, true)) Design.Text(e.Graphics, "basalt", f, new Rectangle(72, 34, 120, 42), Design.Ink, TextFormatFlags.Left);
                 using (var f = Design.Font(9, false)) Design.Text(e.Graphics, L10n.T("Личное подключение"), f, new Rectangle(28, 82, 170, 20), Design.Muted, TextFormatFlags.Left);
             };
