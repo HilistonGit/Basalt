@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/Basalt.png" width="96" height="96" alt="Basalt application icon">
+<img src="assets/basalt-crystal.png" width="96" height="96" alt="Basalt application icon">
 
 # Basalt
 ### Modern tunnels. A home for older Windows.

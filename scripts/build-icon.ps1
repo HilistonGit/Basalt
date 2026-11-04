@@ -1,7 +1,7 @@
 Add-Type -AssemblyName System.Drawing
 $root=Split-Path $PSScriptRoot -Parent
 $frames=@()
-$source = [Drawing.Image]::FromFile((Join-Path $root 'assets/Basalt.png'))
+$source = [Drawing.Image]::FromFile((Join-Path $root 'assets/basalt-crystal.png'))
 try {
     foreach ($size in @(16,24,32,48,64,128,256)) {
         $bitmap = New-Object Drawing.Bitmap($source, $size, $size)

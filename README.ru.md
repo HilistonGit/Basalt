@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/Basalt.png" width="96" height="96" alt="Иконка приложения Basalt">
+<img src="assets/basalt-crystal.png" width="96" height="96" alt="Иконка приложения Basalt">
 
 # Basalt
 ### Современный VPN — с вниманием к старой Windows
